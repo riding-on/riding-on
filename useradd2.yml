@@ -1,8 +1,6 @@
 ##################################################
 ---
 - hosts: CentOS
-  vars:
-    - username: hoge
   tasks:
     - name: Add User
       user: name={{ username }}
