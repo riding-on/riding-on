@@ -3,6 +3,6 @@
 - hosts: CentOS
   tasks:
     - name: Add User
-      user: name={{ username }}
+      user: name={{ username by set_stats }}
       become: yes
 ##################################################
