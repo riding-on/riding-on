@@ -2,7 +2,7 @@
 ---
 - hosts: CentOS
   tasks:
-    - name: Del User
+    - name: Delete User
       user: name={{ username }}
       become: yes
 ##################################################
