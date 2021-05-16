@@ -1,9 +1,9 @@
 ##################################################
 ---
 - hosts: CentOS
-  become: yes
   tasks:
     - name: Add User
       user: name= "{{ item.username }}" 
       with_items: "{{ users }}""
+  become: yes
 ##################################################
