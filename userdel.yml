@@ -3,6 +3,8 @@
 - hosts: CentOS
   tasks:
     - name: Delete User
-      user: name={{ username }}
+      user:
+        - name: {{ username }}
+          state:  absent
       become: yes
 ##################################################
