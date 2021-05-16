@@ -5,6 +5,6 @@
     - name: Add User
       user:
         name: "{{ item.username }}" 
-      with_items: ""{{ users }}""
+      with_items: "{{ users }}"
   become: yes
 ##################################################
