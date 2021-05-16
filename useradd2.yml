@@ -7,5 +7,5 @@
       user: 
         name: "{{ item.username }}"
 
-      with_items: "{{ useradd }}""
+      with_items: "{{ users }}""
 ##################################################
