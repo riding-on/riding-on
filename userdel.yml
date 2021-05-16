@@ -4,7 +4,7 @@
   tasks:
     - name: Delete User
       user:
-        - name: "{{ username }}"
-          state:  absent
-      become: yes
+        name: "{{ username }}"
+        state:  absent
+  become: yes
 ##################################################
