@@ -4,8 +4,6 @@
   become: yes
   tasks:
     - name: Add User
-      user: 
-        name: "{{ item.username }}"
-
+      user: name= "{{ item.username }}" 
       with_items: "{{ users }}""
 ##################################################
