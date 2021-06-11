@@ -1,0 +1,11 @@
+##################################################
+---
+- hosts: CentOS
+  tasks:
+    - name: Modify User
+      user:
+        name: "{{ item.username }}" 
+        state: absent
+      with_items: "{{ users }}"
+  become: yes
+##################################################
