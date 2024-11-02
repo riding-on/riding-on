@@ -9,4 +9,4 @@
         - UpdateRollups
   
   - name: win_os_reboot
-   win_reboot:
+    win_reboot:
